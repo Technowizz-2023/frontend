@@ -3,11 +3,29 @@ import { Elysia, t } from "elysia";
 import { html } from "@elysiajs/html";
 import * as elements from "typed-html";
 
+<<<<<<< Updated upstream
+=======
+import { BaseHtml } from "./components/BaseHTML.tsx";
+import { plugin } from "./components/PluginPreview.tsx";
+
+>>>>>>> Stashed changes
 const app = new Elysia()
     .use(html())
+    .use(plugin)
 
+<<<<<<< Updated upstream
     .get("/", ({ html }) => html(<BaseHtml />))
     .get("/hi", () => "hi")
+=======
+    .get("/", () => <BaseHtml />)
+
+    .post("/", () => <BaseHtml />)
+    .post("/hi", () => (
+        <button class="text-slate-100" hx-post="/test" hx-swap="outerHTML">
+            this
+        </button>
+    ))
+>>>>>>> Stashed changes
 
     .get("styles.css", () => Bun.file("./src/assets/css/output.css"))
 
