@@ -1,4 +1,5 @@
 # frontend
+## ElysiaJS with BunJS, styles using TailwindCSS, DB with Prisma, components using TSX and HTMX
 
 To install dependencies:
 
