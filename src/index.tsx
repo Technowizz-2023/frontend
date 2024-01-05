@@ -7,6 +7,8 @@ const app = new Elysia()
     .use(html())
 
     .get("/", ({ html }) => html(<BaseHtml />))
+    .get("/hi", () => "hi")
+
     .get("styles.css", () => Bun.file("./src/assets/css/output.css"))
 
     .listen(
@@ -34,6 +36,9 @@ export const BaseHtml = () => `
     ${(
         <body class="grid justify-center gap-4 bg-slate-950 py-8">
             <h1 class="mb-4 text-3xl font-semibold text-slate-100">Hello</h1>
+            <button hx-post="/hi" hx-swap="outerHTML" class="text-slate-100">
+                button
+            </button>
         </body>
     )}
 </html>
