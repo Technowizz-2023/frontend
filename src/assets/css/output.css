@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -673,12 +673,32 @@ video {
   inset: -0.25rem;
 }
 
+.bottom-20 {
+  bottom: 5rem;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
 
+.left-2 {
+  left: 0.5rem;
+}
+
+.left-20 {
+  left: 5rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
 .start-1 {
   inset-inline-start: 0.25rem;
+}
+
+.top-20 {
+  top: 5rem;
 }
 
 .isolate {
