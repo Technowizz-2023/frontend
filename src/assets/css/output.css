@@ -2096,6 +2096,11 @@ video {
   font-variant-numeric: normal;
 }
 
+.\!ordinal {
+  --tw-ordinal: ordinal !important;
+  font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction) !important;
+}
+
 .ordinal {
   --tw-ordinal: ordinal;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
@@ -2475,8 +2480,20 @@ video {
   forced-color-adjust: none;
 }
 
+.\!\[a-zA-Z\:_\] {
+  a-z-a--z:  !important;
+}
+
 .\[a-zA-Z0-9\:\\\\-\\\\\._\$\] {
   a-z-a--z0-9: \\-\\. $;
+}
+
+.\[alo\:ahi\] {
+  alo: ahi;
+}
+
+.\[blo\:bhi\] {
+  blo: bhi;
 }
 
 @media (min-width: 640px) {

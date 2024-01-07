@@ -20,7 +20,7 @@ export const sys_history = sqliteTable("sys_history", new LoggedEntity({ // hist
     table: text("table"),
     changes: json("changes"),
     row_id: integer("row_id"), // virtual foreign key to row of 'table' table
-    action_type: text("action_type"), // create enum
+    action_type: text("action_type"), // use Entities/System/History.ACTION_TYPE
 }).build())
 
 export const sys_access_log = sqliteTable("sys_access_log", new LoggedEntity({
