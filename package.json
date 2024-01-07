@@ -8,8 +8,8 @@
   "devDependencies": {
     "@types/bun": "^1.0.0",
     "bun-types": "latest",
+    "drizzle-kit": "^0.20.10",
     "prettier-plugin-tailwindcss": "^0.5.10",
-    "prisma": "^5.7.1",
     "tailwindcss": "^3.4.0"
   },
   "peerDependencies": {
@@ -18,8 +18,10 @@
   "dependencies": {
     "@elysiajs/html": "^0.8.0",
     "concurrently": "^8.2.2",
+    "drizzle-orm": "^0.29.3",
     "elysia": "^0.8.8",
     "prettier": "^3.1.1",
+    "sqlite": "^5.1.1",
     "typed-html": "^3.0.1",
     "typescript": "^5.3.3"
   }
