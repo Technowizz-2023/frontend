@@ -173,7 +173,3 @@ dist
 
 # Finder (MacOS) folder config
 .DS_Store
-
-# bun lock files
-bun.lockb
-bun.lockb
